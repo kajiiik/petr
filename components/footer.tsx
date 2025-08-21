@@ -9,7 +9,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="bg-primary text-primary-foreground px-3 py-1 rounded-md font-bold text-lg">#69</div>
+              <div className="bg-primary text-primary-foreground px-4 py-2 rounded-md font-bold text-2xl">#69</div>
               <span className="font-bold text-xl">PETR VOJTKO</span>
             </div>
             <p className="text-muted-foreground">Professional motocross rider pushing the limits on every track.</p>

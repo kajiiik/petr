@@ -6,26 +6,27 @@ export function NewsSection() {
   const newsItems = [
     {
       id: 1,
-      title: "Victory at Regional Championship",
-      excerpt: "Secured first place in the regional motocross championship with an incredible final lap performance.",
+      title: "Vítězství v regionálním mistrovství",
+      excerpt:
+        "Zajistil jsem si první místo v regionálním motokrosovém mistrovství s neuvěřitelným výkonem v posledním kole.",
       date: "2024-01-15",
-      category: "Race Results",
+      category: "Výsledky závodů",
       image: "/motocross-victory-podium.png",
     },
     {
       id: 2,
-      title: "New Bike Setup for 2024 Season",
-      excerpt: "Unveiling the latest modifications and upgrades to my racing machine for the upcoming season.",
+      title: "Nové nastavení motorky pro sezónu 2024",
+      excerpt: "Odhalení nejnovějších úprav a vylepšení mého závodního stroje pro nadcházející sezónu.",
       date: "2024-01-10",
-      category: "Equipment",
+      category: "Vybavení",
       image: "/professional-motocross-bike.png",
     },
     {
       id: 3,
-      title: "Training Camp in Spain",
-      excerpt: "Intensive training session in Spanish mountains preparing for the international circuit.",
+      title: "Tréninkový kemp ve Španělsku",
+      excerpt: "Intenzivní trénink ve španělských horách při přípravě na mezinárodní okruh.",
       date: "2024-01-05",
-      category: "Training",
+      category: "Trénink",
       image: "/placeholder-bqghv.png",
     },
   ]
@@ -34,9 +35,9 @@ export function NewsSection() {
     <section id="news" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Latest News</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4">Nejnovější Novinky</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Stay updated with my latest races, achievements, and behind-the-scenes moments
+            Zůstaňte v obraze s mými nejnovějšími závody, úspěchy a zákulisními momenty
           </p>
         </div>
 
@@ -60,7 +61,7 @@ export function NewsSection() {
                     {new Date(item.date).toLocaleDateString()}
                   </div>
                   <div className="flex items-center gap-1">
-                    <Clock className="h-4 w-4" />2 min read
+                    <Clock className="h-4 w-4" />2 min čtení
                   </div>
                 </div>
               </CardHeader>

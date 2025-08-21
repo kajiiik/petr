@@ -8,7 +8,7 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/placeholder-7254z.png')`,
+          backgroundImage: `url('/images/petr-motocross-action.jpg')`,
         }}
       >
         <div className="absolute inset-0 bg-black/50" />
@@ -17,7 +17,7 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <div className="mb-6">
-          <div className="inline-block bg-primary text-primary-foreground px-6 py-3 rounded-lg font-bold text-3xl mb-4">
+          <div className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-6xl mb-4">
             #69
           </div>
         </div>
@@ -25,13 +25,13 @@ export function HeroSection() {
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">PETR VOJTKO</h1>
 
         <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
-          Professional Motocross Rider pushing limits on every track. Follow my journey through races, victories, and
-          the passion for speed.
+          Profesionální motokrosový jezdec, který posouvá hranice na každé trati. Sledujte mou cestu závody, vítězstvími
+          a vášní pro rychlost.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            Latest News
+            Nejnovější Novinky
             <ChevronRight className="ml-2 h-5 w-5" />
           </Button>
           <Button
@@ -39,7 +39,7 @@ export function HeroSection() {
             variant="outline"
             className="border-white text-white hover:bg-white hover:text-black bg-transparent"
           >
-            View Races
+            Zobrazit Závody
           </Button>
         </div>
       </div>

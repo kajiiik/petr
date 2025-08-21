@@ -6,17 +6,17 @@ export function RacesSection() {
   const upcomingRaces = [
     {
       id: 1,
-      name: "National Motocross Championship",
+      name: "Mistrovství České republiky",
       date: "2024-02-15",
-      location: "Thunder Valley, Colorado",
+      location: "Loket, Česká republika",
       status: "upcoming",
       position: null,
     },
     {
       id: 2,
-      name: "Spring Classic",
+      name: "Jarní klasika",
       date: "2024-03-10",
-      location: "Glen Helen, California",
+      location: "Pacov, Česká republika",
       status: "upcoming",
       position: null,
     },
@@ -25,25 +25,25 @@ export function RacesSection() {
   const pastRaces = [
     {
       id: 3,
-      name: "Winter Championship",
+      name: "Zimní mistrovství",
       date: "2024-01-15",
-      location: "Daytona, Florida",
+      location: "Holice, Česká republika",
       status: "completed",
       position: 1,
     },
     {
       id: 4,
-      name: "Desert Classic",
+      name: "Pouštní klasika",
       date: "2023-12-20",
-      location: "Phoenix, Arizona",
+      location: "Vysoké Mýto, Česká republika",
       status: "completed",
       position: 3,
     },
     {
       id: 5,
-      name: "Mountain Challenge",
+      name: "Horská výzva",
       date: "2023-11-25",
-      location: "Denver, Colorado",
+      location: "Kramolín, Česká republika",
       status: "completed",
       position: 2,
     },
@@ -61,7 +61,7 @@ export function RacesSection() {
     return (
       <Badge className={variants[position as keyof typeof variants] || "bg-muted"}>
         <Trophy className="h-3 w-3 mr-1" />
-        {position === 1 ? "1st" : position === 2 ? "2nd" : position === 3 ? "3rd" : `${position}th`}
+        {position === 1 ? "1." : position === 2 ? "2." : position === 3 ? "3." : `${position}.`}
       </Badge>
     )
   }
@@ -70,9 +70,9 @@ export function RacesSection() {
     <section id="races" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Race Schedule</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4">Kalendář závodů</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Follow my racing journey through upcoming events and past achievements
+            Sledujte mou závodní cestu skrze nadcházející závody a dosažené úspěchy
           </p>
         </div>
 
@@ -81,7 +81,7 @@ export function RacesSection() {
           <div>
             <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">
               <Calendar className="h-6 w-6 text-primary" />
-              Upcoming Races
+              Nadcházející závody
             </h3>
             <div className="space-y-4">
               {upcomingRaces.map((race) => (
@@ -90,7 +90,7 @@ export function RacesSection() {
                     <div className="flex items-start justify-between">
                       <CardTitle className="text-lg">{race.name}</CardTitle>
                       <Badge variant="outline" className="text-primary border-primary">
-                        Upcoming
+                        Nadcházející
                       </Badge>
                     </div>
                   </CardHeader>
@@ -98,7 +98,7 @@ export function RacesSection() {
                     <div className="space-y-2 text-sm text-muted-foreground">
                       <div className="flex items-center gap-2">
                         <Calendar className="h-4 w-4" />
-                        {new Date(race.date).toLocaleDateString("en-US", {
+                        {new Date(race.date).toLocaleDateString("cs-CZ", {
                           weekday: "long",
                           year: "numeric",
                           month: "long",
@@ -120,7 +120,7 @@ export function RacesSection() {
           <div>
             <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">
               <Trophy className="h-6 w-6 text-accent" />
-              Recent Results
+              Nedávné výsledky
             </h3>
             <div className="space-y-4">
               {pastRaces.map((race) => (
@@ -135,7 +135,7 @@ export function RacesSection() {
                     <div className="space-y-2 text-sm text-muted-foreground">
                       <div className="flex items-center gap-2">
                         <Calendar className="h-4 w-4" />
-                        {new Date(race.date).toLocaleDateString("en-US", {
+                        {new Date(race.date).toLocaleDateString("cs-CZ", {
                           year: "numeric",
                           month: "long",
                           day: "numeric",

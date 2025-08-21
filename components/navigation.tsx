@@ -9,10 +9,10 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { name: "News", href: "#news" },
-    { name: "Races", href: "#races" },
-    { name: "My Bike", href: "#bike" },
-    { name: "Marketplace", href: "#marketplace" },
+    { name: "Novinky", href: "#news" },
+    { name: "Závody", href: "#races" },
+    { name: "Moje Motorka", href: "#bike" },
+    { name: "Helma", href: "#helmet" },
     { name: "Merch", href: "#merch" },
   ]
 
@@ -22,7 +22,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo/Brand */}
           <div className="flex items-center space-x-2">
-            <div className="bg-primary text-primary-foreground px-3 py-1 rounded-md font-bold text-lg">#69</div>
+            <div className="bg-primary text-primary-foreground px-4 py-2 rounded-md font-bold text-2xl">#69</div>
             <span className="font-bold text-xl text-foreground">PETR VOJTKO</span>
           </div>
 
