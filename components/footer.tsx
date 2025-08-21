@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter, Youtube } from "lucide-react"
+import { Facebook, Instagram } from "lucide-react"
 import Link from "next/link"
 
 export function Footer() {
@@ -16,9 +16,14 @@ export function Footer() {
               Profesionální motokrosový jezdec posouvající hranice na každé trati.
             </p>
             <div className="flex space-x-4">
-              <span className="text-muted-foreground cursor-default">
+              <Link
+                href="https://www.facebook.com/profile.php?id=100076490017523"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Facebook className="h-5 w-5" />
-              </span>
+              </Link>
               <Link
                 href="https://www.instagram.com/vojtkoo.p/"
                 target="_blank"
@@ -27,12 +32,6 @@ export function Footer() {
               >
                 <Instagram className="h-5 w-5" />
               </Link>
-              <span className="text-muted-foreground cursor-default">
-                <Twitter className="h-5 w-5" />
-              </span>
-              <span className="text-muted-foreground cursor-default">
-                <Youtube className="h-5 w-5" />
-              </span>
             </div>
           </div>
 

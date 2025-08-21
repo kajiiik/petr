@@ -23,7 +23,7 @@ export function BikeSection() {
     <section id="bike" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Moje závodní stroj</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4">Můj závodní stroj</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Honda CRF250R 2024 - spolehlivý a výkonný stroj pro každý závod
           </p>
@@ -47,14 +47,14 @@ export function BikeSection() {
           {/* Bike Details */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-foreground mb-6">Technické specifikace</h3>
-              <div className="grid grid-cols-2 gap-4">
+              <h3 className="text-3xl font-bold text-foreground mb-8 text-center">Technické specifikace</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
                 {bikeSpecs.map((spec, index) => (
-                  <Card key={index} className="text-center">
+                  <Card key={index} className="text-center p-4">
                     <CardContent className="pt-6">
-                      <spec.icon className="h-8 w-8 text-primary mx-auto mb-2" />
-                      <p className="font-semibold text-foreground">{spec.value}</p>
-                      <p className="text-sm text-muted-foreground">{spec.label}</p>
+                      <spec.icon className="h-10 w-10 text-primary mx-auto mb-3" />
+                      <p className="font-bold text-xl text-foreground mb-1">{spec.value}</p>
+                      <p className="text-lg text-muted-foreground">{spec.label}</p>
                     </CardContent>
                   </Card>
                 ))}
@@ -75,7 +75,7 @@ export function BikeSection() {
                     {modifications.map((mod, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
-                        <span className="text-muted-foreground">{mod}</span>
+                        <span className="text-muted-foreground font-bold">{mod}</span>
                       </li>
                     ))}
                   </ul>
