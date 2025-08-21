@@ -7,37 +7,37 @@ export function MerchSection() {
   const merchItems = [
     {
       id: 1,
-      name: "Official #69 T-Shirt",
-      price: "$29",
+      name: "Oficiální tričko #69",
+      price: "750 Kč",
       sizes: ["S", "M", "L", "XL", "XXL"],
-      colors: ["Black", "Red", "White"],
+      colors: ["Černá", "Červená", "Bílá"],
       image: "/black-t-shirt-motocross-69.png",
       isNew: true,
     },
     {
       id: 2,
-      name: "Racing Team Hoodie",
-      price: "$59",
+      name: "Závodní mikina týmu",
+      price: "1500 Kč",
       sizes: ["S", "M", "L", "XL", "XXL"],
-      colors: ["Black", "Gray"],
+      colors: ["Černá", "Šedá"],
       image: "/black-motocross-hoodie.png",
       isNew: false,
     },
     {
       id: 3,
-      name: "Signature Cap",
-      price: "$24",
-      sizes: ["One Size"],
-      colors: ["Black", "Red", "Navy"],
+      name: "Podpisová kšiltovka",
+      price: "600 Kč",
+      sizes: ["Univerzální"],
+      colors: ["Černá", "Červená", "Modrá"],
       image: "/embroidered-baseball-cap.png",
       isNew: true,
     },
     {
       id: 4,
-      name: "Racing Poster Set",
-      price: "$19",
+      name: "Sada závodních plakátů",
+      price: "500 Kč",
       sizes: ["A3"],
-      colors: ["Full Color"],
+      colors: ["Barevné"],
       image: "/motocross-poster-69.png",
       isNew: false,
     },
@@ -47,9 +47,9 @@ export function MerchSection() {
     <section id="merch" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Official Merchandise</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4">Oficiální merchandise</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Show your support with official Petr Vojtko #69 merchandise. Wear the colors of a champion.
+            Ukažte svou podporu s oficiálním merchandise Petra Vojtka #69. Noste barvy šampiona.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export function MerchSection() {
                   alt={item.name}
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                {item.isNew && <Badge className="absolute top-4 left-4 bg-accent text-accent-foreground">New</Badge>}
+                {item.isNew && <Badge className="absolute top-4 left-4 bg-accent text-accent-foreground">Nové</Badge>}
                 <Button
                   size="sm"
                   variant="ghost"
@@ -79,7 +79,7 @@ export function MerchSection() {
 
               <CardContent className="space-y-4">
                 <div>
-                  <p className="text-sm font-medium text-foreground mb-2">Available Sizes:</p>
+                  <p className="text-sm font-medium text-foreground mb-2">Dostupné velikosti:</p>
                   <div className="flex flex-wrap gap-1">
                     {item.sizes.map((size) => (
                       <Badge key={size} variant="outline" className="text-xs">
@@ -90,7 +90,7 @@ export function MerchSection() {
                 </div>
 
                 <div>
-                  <p className="text-sm font-medium text-foreground mb-2">Colors:</p>
+                  <p className="text-sm font-medium text-foreground mb-2">Barvy:</p>
                   <div className="flex flex-wrap gap-1">
                     {item.colors.map((color) => (
                       <Badge key={color} variant="outline" className="text-xs">
@@ -102,7 +102,7 @@ export function MerchSection() {
 
                 <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
                   <ShoppingBag className="h-4 w-4 mr-2" />
-                  Add to Cart
+                  Přidat do košíku
                 </Button>
               </CardContent>
             </Card>
@@ -111,13 +111,13 @@ export function MerchSection() {
 
         <div className="text-center mt-12">
           <div className="bg-card text-card-foreground p-8 rounded-lg max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Join the #69 Family</h3>
+            <h3 className="text-2xl font-bold mb-4">Připojte se k rodině #69</h3>
             <p className="text-muted-foreground mb-6">
-              Get exclusive access to limited edition merchandise, early releases, and special discounts on all official
-              gear.
+              Získejte exkluzivní přístup k limitovanému merchandise, přednostním vydáním a speciálním slevám na všechno
+              oficiální vybavení.
             </p>
             <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-              Sign Up for Updates
+              Přihlásit se k novinkám
             </Button>
           </div>
         </div>

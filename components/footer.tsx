@@ -12,50 +12,57 @@ export function Footer() {
               <div className="bg-primary text-primary-foreground px-4 py-2 rounded-md font-bold text-2xl">#69</div>
               <span className="font-bold text-xl">PETR VOJTKO</span>
             </div>
-            <p className="text-muted-foreground">Professional motocross rider pushing the limits on every track.</p>
+            <p className="text-muted-foreground">
+              Profesionální motokrosový jezdec posouvající hranice na každé trati.
+            </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <span className="text-muted-foreground cursor-default">
                 <Facebook className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              </span>
+              <Link
+                href="https://www.instagram.com/vojtkoo.p/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
                 <Instagram className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <span className="text-muted-foreground cursor-default">
                 <Twitter className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              </span>
+              <span className="text-muted-foreground cursor-default">
                 <Youtube className="h-5 w-5" />
-              </Link>
+              </span>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Quick Links</h3>
+            <h3 className="font-semibold text-foreground mb-4">Rychlé odkazy</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="#news" className="text-muted-foreground hover:text-primary transition-colors">
-                  News
+                  Novinky
                 </Link>
               </li>
               <li>
                 <Link href="#races" className="text-muted-foreground hover:text-primary transition-colors">
-                  Races
+                  Závody
                 </Link>
               </li>
               <li>
                 <Link href="#bike" className="text-muted-foreground hover:text-primary transition-colors">
-                  My Bike
+                  Moje motorka
                 </Link>
               </li>
               <li>
-                <Link href="#marketplace" className="text-muted-foreground hover:text-primary transition-colors">
-                  Marketplace
+                <Link href="#helmet" className="text-muted-foreground hover:text-primary transition-colors">
+                  Bazar
                 </Link>
               </li>
               <li>
                 <Link href="#merch" className="text-muted-foreground hover:text-primary transition-colors">
-                  Merch
+                  Merchandise
                 </Link>
               </li>
             </ul>
@@ -63,55 +70,31 @@ export function Footer() {
 
           {/* Support */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Support</h3>
+            <h3 className="font-semibold text-foreground mb-4">Podpora</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Contact
-                </Link>
+                <span className="text-muted-foreground cursor-default">Kontakt</span>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Shipping Info
-                </Link>
+                <span className="text-muted-foreground cursor-default">Informace o dopravě</span>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Returns
-                </Link>
+                <span className="text-muted-foreground cursor-default">Vrácení zboží</span>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  Size Guide
-                </Link>
+                <span className="text-muted-foreground cursor-default">Průvodce velikostmi</span>
               </li>
               <li>
-                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                  FAQ
-                </Link>
+                <span className="text-muted-foreground cursor-default">Často kladené otázky</span>
               </li>
             </ul>
           </div>
 
           {/* Newsletter */}
-          <div>
-            <h3 className="font-semibold text-foreground mb-4">Stay Updated</h3>
-            <p className="text-muted-foreground mb-4">Get the latest news and race updates delivered to your inbox.</p>
-            <div className="space-y-2">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full px-3 py-2 bg-input border border-border rounded-md text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-              />
-              <button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-md transition-colors">
-                Subscribe
-              </button>
-            </div>
-          </div>
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2024 Petr Vojtko. All rights reserved. | Racing with passion since day one.</p>
+          <p>&copy; 2024 Petr Vojtko. Všechna práva vyhrazena. | Závodím se vášní od prvního dne.</p>
         </div>
       </div>
     </footer>

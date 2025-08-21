@@ -4,19 +4,19 @@ import { Wrench, Zap, Weight, Gauge } from "lucide-react"
 
 export function BikeSection() {
   const bikeSpecs = [
-    { icon: Zap, label: "Motor", value: "450cc 4-takt" },
-    { icon: Weight, label: "Hmotnost", value: "108 kg" },
-    { icon: Gauge, label: "Max. výkon", value: "63 HP" },
-    { icon: Wrench, label: "Odpružení", value: "Plně nastavitelné" },
+    { icon: Zap, label: "Motor", value: "250cc 4-takt" },
+    { icon: Weight, label: "Hmotnost", value: "104 kg" },
+    { icon: Gauge, label: "Max. výkon", value: "40 HP" },
+    { icon: Wrench, label: "Odpružení", value: "Showa, Tommy Suspension!" },
   ]
 
   const modifications = [
-    "Vlastní výfukový systém pro optimální výkon",
-    "Vylepšené odpružení s nastavením pro závody",
-    "Lehké komponenty z karbonových vláken",
-    "Výkonný vzduchový filtr a sání",
-    "Vlastní grafika a startovní číslo",
-    "Závodní pneumatiky pro maximální přilnavost",
+    "Akrapovič výfukový systém pro lepší výkon",
+    "Showa A-Kit odpružení přední i zadní",
+    "Pro Circuit vzduchový filtr a sání",
+    "Renthal řídítka a gripy",
+    "Vlastní grafika s číslem #69",
+    "MITAS Terra Force-MX SAND 2 závodní pneumatiky",
   ]
 
   return (
@@ -25,7 +25,7 @@ export function BikeSection() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-foreground mb-4">Moje závodní stroj</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Poznejte bestii, která mě nese k vítězství - navržena pro rychlost a přesnost
+            Honda CRF250R 2024 - spolehlivý a výkonný stroj pro každý závod
           </p>
         </div>
 
@@ -34,8 +34,8 @@ export function BikeSection() {
           <div className="relative">
             <div className="relative overflow-hidden rounded-lg">
               <img
-                src="/motocross-bike-garage.png"
-                alt="Závodní motorka Petra Vojtka #69"
+                src="/images/honda-crf-clean.png"
+                alt="Honda CRF250R 2024 - Závodní motorka Petra Vojtka #69"
                 className="w-full h-auto object-cover"
               />
               <div className="absolute top-4 right-4">

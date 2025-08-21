@@ -12,7 +12,7 @@ export function Navigation() {
     { name: "Novinky", href: "#news" },
     { name: "Závody", href: "#races" },
     { name: "Moje Motorka", href: "#bike" },
-    { name: "Helma", href: "#helmet" },
+    { name: "Bazar", href: "#helmet" },
     { name: "Merch", href: "#merch" },
   ]
 
